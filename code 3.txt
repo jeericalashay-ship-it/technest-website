@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHNEST Cyber & Technologies | Quality & Affordable Services</title>
+  <style>
+    :root{
+      --primary:#0b3cff;
+      --secondary:#4f46e5;
+      --dark:#0f172a;
+      --light:#f8fafc;
+      --accent:#22c55e;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Segoe UI,Arial,Helvetica,sans-serif;color:#0b1220;background:#ffffff}
+    a{text-decoration:none}
+
+    /* HEADER */
+    header{position:sticky;top:0;z-index:999;background:linear-gradient(90deg,var(--primary),var(--secondary));box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .container{width:92%;max-width:1200px;margin:auto}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{color:#fff;font-weight:900;font-size:22px;letter-spacing:.5px}
+    .nav a{color:#fff;font-weight:800;margin-left:22px}
+    .nav a:hover{opacity:.85}
+
+    /* HERO */
+    .hero{background:
+      radial-gradient(1200px 400px at 10% 10%, rgba(79,70,229,.35), transparent 40%),
+      radial-gradient(900px 400px at 90% 20%, rgba(34,197,94,.25), transparent 45%),
+      linear-gradient(135deg,#020617,#020617 60%,#020617);
+      color:#fff;padding:110px 0}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+    .hero h1{font-size:56px;line-height:1.05;margin:0 0 18px;font-weight:1000}
+    .hero p{font-size:20px;max-width:720px;opacity:.95}
+    .cta{display:flex;gap:16px;margin-top:28px}
+    .btn{display:inline-block;padding:16px 34px;border-radius:40px;font-weight:900}
+    .btn.primary{background:#fff;color:#020617}
+    .btn.outline{border:2px solid #fff;color:#fff}
+    .hero-badges{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .badge{background:rgba(255,255,255,.08);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:18px;text-align:center;font-weight:800}
+
+    /* SECTIONS */
+    section{padding:90px 0}
+    h2{font-size:40px;text-align:center;margin:0 0 18px;font-weight:1000;color:var(--primary)}
+    .sub{max-width:780px;margin:0 auto 46px;text-align:center;font-size:18px;color:#334155}
+
+    /* ABOUT */
+    .about{background:linear-gradient(180deg,#ffffff,#f1f5f9)}
+    .about p{max-width:900px;margin:0 auto;font-size:20px;text-align:center;font-weight:600}
+
+    /* SERVICES */
+    .services{background:#ffffff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+    .card{border-radius:26px;padding:28px;box-shadow:0 25px 50px rgba(2,6,23,.12);border:1px solid #e5e7eb;background:#fff}
+    .card h3{margin:14px 0 8px;font-size:22px;font-weight:900}
+    .icon{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:30px;font-weight:900;color:#fff}
+    .i-print{background:linear-gradient(135deg,#2563eb,#4f46e5)}
+    .i-photo{background:linear-gradient(135deg,#22c55e,#16a34a)}
+    .i-video{background:linear-gradient(135deg,#ef4444,#dc2626)}
+    .i-doc{background:linear-gradient(135deg,#9333ea,#7c3aed)}
+    .i-gov{background:linear-gradient(135deg,#0ea5e9,#0284c7)}
+    .i-cyber{background:linear-gradient(135deg,#111827,#334155)}
+    .card p{font-size:16px;color:#334155}
+
+    /* CONTACT */
+    .contact{background:linear-gradient(180deg,#f8fafc,#ffffff)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .info{font-size:18px;font-weight:800}
+    .info span{display:block;margin:10px 0}
+    form input,form textarea{width:100%;padding:16px;border-radius:14px;border:1px solid #cbd5f5;font-size:16px;margin-bottom:14px}
+    form button{border:none}
+
+    /* WHATSAPP */
+    .whatsapp{position:fixed;right:22px;bottom:22px;background:#22c55e;color:#fff;padding:16px 22px;border-radius:50px;font-weight:900;box-shadow:0 15px 35px rgba(0,0,0,.35)}
+
+    /* FOOTER */
+    footer{background:#020617;color:#cbd5f5;text-align:center;padding:26px 0}
+
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero h1{font-size:42px}
+      .contact-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand"><img src="logo.png" alt="TECHNEST Logo" style="height:42px;vertical-align:middle;margin-right:10px">TECHNEST CYBER & TECHNOLOGIES</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <h1>THE HOME OF QUALITY & AFFORDABLE SERVICES</h1>
+      <p>Professional cyber, printing, photography, video, and online government services — delivered fast, accurately, and affordably.</p>
+      <div class="cta">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn outline" href="#contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-badges">
+      <div class="badge">High‑Quality Printing</div>
+      <div class="badge">Passport Photos</div>
+      <div class="badge">eCitizen • KRA • HELB</div>
+      <div class="badge">Fast & Reliable</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2>About TECHNEST</h2>
+    <p>TECHNEST Cyber & Technologies is the home of quality and affordable services. We proudly serve students, individuals, and businesses with dependable cyber, digital, and media solutions.</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <h2>Our Professional Services</h2>
+    <p class="sub">Everything you need in one trusted cyber & technology hub.</p>
+
+    <!-- Real Images + Icons -->
+    <div class="grid">
+      <div class="card">
+        <img src="images/printing.jpg" alt="Printing Services" style="width:100%;border-radius:18px">
+        <div class="icon i-print">🖨️</div>
+        <h3>Printing & Typesetting</h3>
+        <p>Sharp printing, clean typesetting, binding, and lamination.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/photography.jpg" alt="Photography Services" style="width:100%;border-radius:18px">
+        <div class="icon i-photo">📸</div>
+        <h3>Photography</h3>
+        <p>Outside photography, passport photo production & editing.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/video.jpg" alt="Video Coverage" style="width:100%;border-radius:18px">
+        <div class="icon i-video">🎥</div>
+        <h3>Video Coverage</h3>
+        <p>Professional event video coverage and editing.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/computer-training.jpg" alt="Computer Training" style="width:100%;border-radius:18px">
+        <div class="icon i-cyber">💻</div>
+        <h3>Computer Training</h3>
+        <p>Basic to advanced computer training, typing, internet, and office applications.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/online-services.jpg" alt="Online Services" style="width:100%;border-radius:18px">
+        <div class="icon i-gov">🏛️</div>
+        <h3>Online Government Services</h3>
+        <p>eCitizen, KRA, HELB, KUCCPS & more.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/cyber.jpg" alt="Cyber Services" style="width:100%;border-radius:18px">
+        <div class="icon i-doc">🌐</div>
+        <h3>General Cyber Services</h3>
+        <p>Internet access, registrations & online assistance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <div class="contact-grid">
+      <div class="info">
+        <span>📞 WhatsApp / Call: <strong>0113 444 054</strong></span>
+        <span>📧 Email: <strong>technesttechnologies67@gmail.com</strong></span>
+        <span>📍 Reliable • Fast • Affordable</span>
+      </div>
+      <div class="card">
+        <form action="https://formspree.io/f/myzrvpaq" method="POST">
+          <input type="hidden" name="_subject" value="New Message from TECHNEST Website">
+          <input name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/254113444054" target="_blank">💬 WhatsApp Us</a>
+
+<footer>
+  <p>© 2025 TECHNEST Cyber & Technologies</p>
+  <p>We also guide clients on affordable hosting & domain registration.</p>
+</footer>
+
+</body>
+</html>
